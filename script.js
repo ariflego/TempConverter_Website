@@ -9,7 +9,7 @@ const convertBtn = document.getElementById("convertBtn");
 const output = document.getElementById("output");
 
 convertBtn.onclick = function(){
-    const numInput = textBox.value;
+    let numInput = Number(textBox.value);
 
     let numOutput = "Invalid Conversion";
 
@@ -42,4 +42,5 @@ convertBtn.onclick = function(){
     }
 
     output.textContent = `Converted Value: ${numOutput}`;
+    console.log(`${numInput} = ${numOutput}`)
 };
